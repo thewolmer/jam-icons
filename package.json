@@ -1,58 +1,57 @@
 {
-  "name": "@wolmer/jam-icons",
-  "description": "A rect library of comprehensive collection of over 940 meticulously crafted & free icons, for all your projects.",
-  "homepage": "https://github.com/thewolmer/jam-icons",
-  "version": "0.0.1",
-  "module": "dist/index.esm.js",
-  "type": "module",
-  "scripts": {
-    "prebuild": "rimraf src && rimraf dist",
-    "build": "npm run svgr && rollup -c",
-    "svgr": "svgr --icon --title-prop -d src icons",
-    "commit": "git-cz",
-    "release": "commit-and-tag-version",
-    "push": "git push --follow-tags origin main",
-    "lint": "biome lint ."
-  },
-  "author": "@thewolmer",
-  "license": "MIT",
-  "files": [
-    "dist",
-    "README.md",
-    "CHANGELOG.md",
-    "LICENSE"
-  ],
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
-  "dependencies": {
-    "@babel/runtime": "^7.26.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/plugin-transform-runtime": "^7.25.9",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.25.9",
-    "@biomejs/biome": "1.8.3",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@svgr/cli": "^8.1.0",
-    "@types/node": "^22.1.0",
-    "commit-and-tag-version": "^12.4.1",
-    "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "rimraf": "^6.0.1",
-    "rollup": "^4.24.2",
-    "rollup-plugin-filesize": "^10.0.0",
-    "typescript": "^5.6.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thewolmer/jamicons.git"
-  },
-  "keywords": [
-    "next.js",
-    "tailwindcss",
-    "icons",
-    "jamicons",
-    "react",
-    "cute icons"
-  ]
+	"name": "@wolmer/jam-icons",
+	"description": "A rect library of comprehensive collection of over 940 meticulously crafted & free icons, for all your projects.",
+	"homepage": "https://github.com/thewolmer/jam-icons",
+	"version": "0.0.1",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/src/index.d.ts",
+	"type": "module",
+	"scripts": {
+		"prebuild": "rimraf src && rimraf dist",
+		"build": "npm run svgr && rollup -c",
+		"svgr": "svgr --icon --title-prop --typescript -d src icons",
+		"commit": "git-cz",
+		"release": "commit-and-tag-version",
+		"push": "git push --follow-tags origin master",
+		"lint": "biome lint ."
+	},
+	"author": "@thewolmer",
+	"license": "MIT",
+	"files": ["dist", "README.md", "CHANGELOG.md", "LICENSE"],
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+	"dependencies": {
+		"@babel/runtime": "^7.26.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.26.0",
+		"@babel/plugin-transform-runtime": "^7.25.9",
+		"@babel/preset-env": "^7.26.0",
+		"@babel/preset-react": "^7.25.9",
+		"@rollup/plugin-babel": "^6.0.4",
+		"@rollup/plugin-typescript": "^12.1.1",
+		"@svgr/cli": "^8.1.0",
+		"@types/node": "^22.1.0",
+		"@types/react": "^18.3.12",
+		"commit-and-tag-version": "^12.4.1",
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"react": "^18.3.1",
+		"rimraf": "^6.0.1",
+		"rollup": "^4.24.2",
+		"rollup-plugin-filesize": "^10.0.0",
+		"typescript": "^5.6.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thewolmer/jamicons.git"
+	},
+	"keywords": [
+		"next.js",
+		"tailwindcss",
+		"icons",
+		"jamicons",
+		"react",
+		"cute icons"
+	]
 }
