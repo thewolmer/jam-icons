@@ -1,8 +1,8 @@
 {
 	"name": "@wolmer/jam-icons",
 	"description": "A rect library of comprehensive collection of over 940 meticulously crafted & free icons, for all your projects.",
-	"homepage": "https://github.com/thewolmer/jam-icons",
-	"version": "0.0.3",
+	"homepage": "https://jamicons.wolmer.me",
+	"version": "0.0.9",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
 	"types": "dist/src/index.d.ts",
